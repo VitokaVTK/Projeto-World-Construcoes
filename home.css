@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    
+    display: flex;
+    height: 150px;
+}
+
+
+
+
+#logo{
+    display: flex;
+    width: 150px;
+    height: ;
+    margin-left: 50px;
+}
+
+#boxqualquer{
+    background-color: black;
+    display: flex;
+    width: 550px;
+    height: 80px;
+    border-radius: 10px;
+    margin: 50px;
+    margin-left: 800px;
+
+
+}

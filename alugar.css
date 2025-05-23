@@ -4,21 +4,29 @@
 }
 
 
+
+
+
+
+
+
 header{
     display: flex;
-    justify-content: space-around;
-    margin-bottom: -20px;
     
+    margin-bottom: -20px;
+    background-color: #0A2F5C;
 }
 
 #logo{ /*Mexe na logo*/
+    
     width: 189px;
     cursor: pointer;
     transition: transform 0.5s ease;
+    margin-left: 145%;
 }
 
 #logo:hover{
-    transform: scale(1.01);
+    transform: scale(1.05);
 }
 
 #boxqualquer{ /*Mexe no quadrado azul no canto direito superior*/
@@ -32,7 +40,7 @@ header{
 
 #menuhome{ /*Mexe na barra grande do menu*/
     display: flex;
-    background-color: #69B7FF;
+    background-color:#0A2F5C;
     width: 100%;
     height: 30px;
     justify-content: space-evenly;
@@ -47,29 +55,35 @@ header{
 
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F2F2F2;
+  color: #333333;
+}
+
 
 
 .box_lista{ /*Mexe na tag <li>*/
     display: flex;
     margin: 50px;
-    background-color: #63a3f8;
+    background-color: #1ABC9C;
     width: 100px;
     justify-content: center;
     align-items: center;
     height: 30px;
     border-radius: 5px;
     cursor: pointer;
-    transition: transform 0.5s ease;
-    
+    transition: all 0.7s ease;
 }
 
 .box_lista:hover{   /*Efeito do <li>*/
     transform: scale(1.2);
+    background-color: #154D8C;
 }
 
 .texto_menu{ /*Mexe no texto do menu de navegação*/
     text-decoration: none;
-    color: black;
+    color: #FFFFFF;
 }
 
 #configcard{ /*Mexe na tag <section>*/
@@ -85,7 +99,7 @@ header{
     background-color: #ffffff;
     border-radius: 21px;
     transition: 0.5s ease;
-    transition: 0.5s ease;
+
     border: solid 0.1px rgb(221, 221, 221);
 }
 
@@ -104,21 +118,29 @@ header{
     border-radius: 21px;
 }
 
-.card img:hover{
-    transform: translateY(-40px); /*Faz a imagem subir*/
-}
+
 
 #titulo_card {
+    
     padding-left: 30px;
     text-decoration: none;
     transition: 0.7s ease;
     color: #d1d9da;
-    overflow: hidden;
+    
     height: 0px;
+    padding-top: 5px;
+    opacity: 0;
+    visibility: hidden;
+    
+    overflow: hidden;
+    
 }
 
 .card:hover #titulo_card { /*Mostra o texto*/
     height: 150px; 
     color: black;
+    opacity: 1;
+    visibility: visible;
+   
 }
 
